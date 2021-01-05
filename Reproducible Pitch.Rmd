@@ -1,0 +1,34 @@
+---
+title: "Reproducible Pitch"
+author: "anaslartiste94"
+date: "05/01/2021"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## The game
+
+- The goal of the application is to guess a hidden integer between 1 and 100.
+
+- The application tells if the entered number is too high or too low
+
+## Example
+
+The hidden number is calculated randomly and only once in the beginning:
+
+```{r, echo = TRUE}
+hidden = round(runif(1, min = 1, max = 100))
+hidden
+```
+
+## Example (cont')
+
+Assuming the hidden number is 12 and the user entered 7, 25,15 and 12.
+
+The output text would be: "Higher!", "Lower!", "Lower!" and "You found the number!"
+
+## Thanks
